@@ -1,0 +1,61 @@
+{
+  "name": "@sepoina/useshared",
+  "version": "0.5.102",
+  "private": false,
+  "module": "dist-library/index.js",
+  "license": "MIT",
+  "type": "module",
+  "description": "Use shared hooks when Redux is overkill and useContext isn't enough.",
+  "author": {
+    "name": "Giancarlo Ghigi",
+    "email": "ripensamento@gmail.com"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist-library/index.js",
+      "require": "./dist-library/index.js"
+    }
+  },
+  "keywords": [
+    "react",
+    "react-hooks",
+    "context-api",
+    "state-management",
+    "redux-alternative",
+    "custom-hooks",
+    "shared-state",
+    "react-components",
+    "useContext",
+    "useState"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sepoina/useshared.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sepoina/useshared/issues"
+  },
+  "homepage": "https://github.com/sepoina/useshared#readme",
+
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "createlib": "BUILD_LIB=true vite build",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.43",
+    "@types/react-dom": "^18.2.17",
+    "@vitejs/plugin-react": "^4.2.1",
+    "eslint": "^8.55.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "vite": "^5.0.8"
+  }
+}
